@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <style>
+        .eye-icon {
+            position: absolute;
+            right: 15px;
+            top: 50%;
+            transform: translateY(-50%);
+            cursor: pointer;
+        }
+        .side-image {
+            background-image: url("https://images.unsplash.com/photo-1477346611705-65d1883cee1e?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+            background-color: rgb(45, 33, 67);
+            padding: 30px;
+            background-position: center;
+            background-size: cover;
+            position: relative;
+            border-radius: 10px 0 0 10px;
+        }
+        .right {
+            background-color: rgb(55, 44, 78);
+            padding: 20px;
+            border-radius: 0 10px 10px 0;
+        }
+    </style>
+</head>
+<body style="background-color: #504c5f;">
+    <div class="wrapper">
+        <div class="container main" style="padding: 42px;">
+            <div class="row">
+                <div class="col-md-6 side-image"><br>
+                    <h2 class="logo text-center" style="color: rgb(2, 2, 2);"><i class="fa-solid fa-scroll"></i> Codehal</h2>
+                    <div class="text-center" style="color: rgb(99, 100, 101); margin-top: 290px;">
+                        <h6>Capturing Moments,</h6>
+                        <h6>Creating Memories</h6>
+                    </div>
+                </div>
+                <div class="col-md-6 right">
+                    <form class="was-validated" novalidate>
+                        <header class="mt-3 ms-1" style="color: #f5f4f4; font-size: 25px;"><strong>Create an account</strong></header>
+                        <p class="mt-2 ms-2" style="color: rgba(244, 244, 244, 0.945); font-size: 12px;">Already have an account? <a href="#">Login</a></p>
+                        <div class="row">
+                            <div class="col-lg-6 mb-3">
+                                <input type="text" class="form-control" placeholder="First name" required>
+                                <div class="invalid-feedback">Please provide your first name.</div>
+                            </div>
+                            <div class="col-lg-6 mb-3">
+                                <input type="text" class="form-control" placeholder="Last name" required>
+                                <div class="invalid-feedback">Please provide your last name.</div>
+                            </div>
+                        </div>
+
+                        <div class="form-floating mb-3">
+                            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" required>
+                            <label for="floatingInput">Email address</label>
+                            <div class="invalid-tooltip">Please enter a valid email address.</div>
+                        </div>
+
+                        <div class="form-floating position-relative mb-3">
+                            <input type="password" class="form-control" id="floatingPassword" placeholder="Password" required>
+                            <label for="floatingPassword">Password</label>
+                            <i class="fa fa-eye eye-icon" id="togglePassword"></i>
+                            <div class="invalid-tooltip">Please enter a password.</div>
+                        </div>
+
+                        <div class="form-check text-start mb-3" style="font-size: 13px; color: white;">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" required>
+                            <label class="form-check-label text-light" for="flexCheckChecked">I agree to the
+                                <a href="#">terms and conditions</a>
+                            </label>
+                            <div class="invalid-feedback">You must agree to the terms and conditions.</div>
+                        </div>
+
+                        <div class="d-grid gap-2 col-12 mx-auto mb-3">
+                            <button class="btn btn-primary" type="submit">Create Account</button>
+                        </div>
+
+                        <p class="text-center" style="font-size: 12px; color: slategrey;">Or register with</p>
+                        <div class="d-flex justify-content-center gap-3">
+                            <button type="button" class="btn btn-outline-secondary">
+                                <i class="fa-brands fa-google">&nbsp;</i>Google
+                            </button>
+                            <button type="button" class="btn btn-outline-secondary">
+                                <i class="fa-brands fa-apple ">&nbsp;</i>Apple
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script> -->
+</body>
+</html>
